@@ -53,7 +53,7 @@ module Lti
 
       it 'creates the product info' do
         product_info = tcp_creator.create.product_instance.product_info
-        expect(product_info.product_name.default_value).to eq 'Canvas by Instructure'
+        expect(product_info.product_name.default_value).to eq 'ABN EDU'
         expect(product_info.product_version).to eq 'none'
         expect(product_info.product_family).to be_a IMS::LTI::Models::ProductFamily
       end
@@ -68,7 +68,7 @@ module Lti
       it 'creates the vendor' do
         vendor = tcp_creator.create.product_instance.product_info.product_family.vendor
         expect(vendor.code).to eq 'https://instructure.com'
-        expect(vendor.vendor_name.default_value).to eq 'Instructure'
+        expect(vendor.vendor_name.default_value).to eq 'ABN Asia'
         expect(vendor.vendor_name.key).to eq 'vendor.name'
         expect(vendor.timestamp.to_i).to eq Time.zone.parse('2008-03-27 00:00:00 -0600').to_i
       end

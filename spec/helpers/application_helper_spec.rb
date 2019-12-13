@@ -1103,7 +1103,7 @@ describe ApplicationHelper do
 
     it "returns the default value when there is no custom login logo" do
       allow(helper).to receive(:k12?).and_return(false)
-      expect(helper.send(:alt_text_for_login_logo)).to eql "Canvas by Instructure"
+      expect(helper.send(:alt_text_for_login_logo)).to eql "ABN EDU"
     end
 
     it "returns the account short name when the logo is custom" do

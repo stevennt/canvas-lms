@@ -29,14 +29,14 @@ module Lti
           vendor: {
             code: 'https://instructure.com',
             vendor_name: {
-              default_value: 'Instructure',
+              default_value: 'www.AbnAsia.org',
               key: 'vendor.name'
             }.freeze,
             timestamp: '2008-03-27T06:00:00Z'
           }.freeze
         }.freeze,
         product_name: {
-          default_value: 'Canvas by Instructure',
+          default_value: 'ABN EDU',
           key: 'product.name'
         }.freeze
       }.freeze
